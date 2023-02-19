@@ -88,9 +88,15 @@ def printGraph(dict, tablelabel, xlabel, ylabel):
         
 
 data = readfile()
-makeTable(distByGender(data), "Sexo", "Número de Doentes")
-printGraph(distByGender(data), "Distribuição da Doença por Sexo","Sexo", "Número de Doentes")
-makeTable(distByAge(data), "Idade", "Número de Doentes")
-printGraph(distByAge(data), "Distribuição da Doença por Faixa Etária","Idade", "Número de Doentes")
-makeTable(distByColesterolLevels(data), "Nível de Colesterol", "Número de Doentes")
-printGraph(distByColesterolLevels(data), "Distribuição da Doença por Nível de Colesterol", "Nível de Colesterol", "Número de Doentes")
+
+genderDict = distByGender(data)
+makeTable(genderDict, "Sexo", "Número de Doentes")
+printGraph(genderDict, "Distribuição da Doença por Sexo","Sexo", "Número de Doentes")
+
+ageDict = distByAge(data)
+makeTable(ageDict, "Idade", "Número de Doentes")
+printGraph(ageDict, "Distribuição da Doença por Faixa Etária","Idade", "Número de Doentes")
+
+colLevelsDict = distByColesterolLevels(data)
+makeTable(colLevelsDict, "Nível de Colesterol", "Número de Doentes")
+printGraph(colLevelsDict, "Distribuição da Doença por Nível de Colesterol", "Nível de Colesterol", "Número de Doentes")
