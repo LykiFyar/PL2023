@@ -10,6 +10,8 @@ def readfile(filename = "myheart.csv"):
     
     for line in file:
         list.append(line.strip().split(","))
+
+    file.close()
         
     return list
 
