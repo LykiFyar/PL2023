@@ -73,12 +73,8 @@ def makeTable(dict, column1, column2):
 def printGraph(dict, tablelabel, xlabel, ylabel):
 
     # plot
-    fig, ax = plt.subplots()
-
-    ax.bar(dict.keys(), dict.values(),align='center', edgecolor="white")
-
-    ax.set(xlim=(-1, len(dict.keys())), xticks=np.arange(0, len(dict.keys())), ylim=(0, len(dict.values())), yticks=np.arange(0, max(dict.values()), 10))
     
+    plt.bar(dict.keys(), dict.values())
     plt.title(tablelabel)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
