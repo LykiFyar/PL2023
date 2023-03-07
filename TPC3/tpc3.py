@@ -114,8 +114,7 @@ def printGraph(dict, tablelabel, xlabel, ylabel):
 
 array = loadFile("processos.txt")
 opcao = -1
-while opcao!=0:
-    
+while opcao != 0:
     print("1. Gráfico de frequência de processos por ano")
     print("2. Gráfico de frequência de nomes próprios por ano")
     print("3. Gráfico de frequência de apelidos por ano")
