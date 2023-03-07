@@ -2,7 +2,7 @@
 
 > (publicado em 2023.02.28)
 
-Construa agora um ou vários programas Python para processar o texto 'processos.txt' (procurar o ficheiro no Bb) com o intuito de calcular frequências de alguns elementos (a ideia é utilizar arrays associativos, dicionários em Python, para o efeito) conforme solicitado a seguir:
+Construa agora um ou vários programas Python para processar o texto 'processos.txt' com o intuito de calcular frequências de alguns elementos (a ideia é utilizar arrays associativos, dicionários em Python, para o efeito) conforme solicitado a seguir:
 
 1. Calcula a frequência de processos por ano (primeiro elemento da data);
 
