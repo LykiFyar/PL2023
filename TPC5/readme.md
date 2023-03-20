@@ -10,11 +10,11 @@ O telefone reage aos seguintes comandos:
   2. **POUSAR** - pousar o auscultador, fim da interacção, deverá ser indicado o montante a ser devolvido;
   3. **MOEDA \<lista de valores>** - inserção de moedas (só deverá aceitar moedas válidas, para valores inválidos deverá ser gerada uma mensagem de erro): `lista de valores = num, num, ..., num`;
   4. **T=numero** - disca o número ( o número deve ter 9 dígitos excepto se for iniciado por "00"); as diferentes chamadas deverão ser tratadas da seguinte maneira:
-    * para números iniciados por "601" ou "641" a chamada é "_bloqueada_";
-    * para chamadas internacionais (iniciadas por "00") o utilizador tem que ter um saldo igual ou superior a 1,5 euros, caso contrário deverá ser avisado que o saldo é insuficiente e a máquina volta ao estado anterior; a chamada se for realizada tem um custo de 1,5 euros;
-    * para chamadas nacionais (iniciadas por "2") o saldo mínimo e custo de chamada é de 25 cêntimos;
-    * para chamadas verdes (iniciadas por "800") o custo é 0;
-    * para chamadas azuis (iniciadas por "808") o custo é de 10 cêntimos.
+     * para números iniciados por "601" ou "641" a chamada é "_bloqueada_";
+     * para chamadas internacionais (iniciadas por "00") o utilizador tem que ter um saldo igual ou superior a 1,5 euros, caso contrário deverá ser avisado que o saldo é insuficiente e a máquina volta ao estado anterior; a chamada se for realizada tem um custo de 1,5 euros;
+     * para chamadas nacionais (iniciadas por "2") o saldo mínimo e custo de chamada é de 25 cêntimos;
+     * para chamadas verdes (iniciadas por "800") o custo é 0;
+     * para chamadas azuis (iniciadas por "808") o custo é de 10 cêntimos.
   5. **ABORTAR** - interromper a interacção; a máquina devolve as moedas.
 
 Como extra pode ainda detalhar como é que é devolvido o troco: quantas moedas e de que espécie compõem o troco.
